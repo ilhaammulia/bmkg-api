@@ -10,14 +10,12 @@ def main():
     temp_resp = []
     if response != None:
         date_time = response['Infogempa']['gempa']['DateTime']
-        if date_time in temp_resp:
-            pass
+        if date_time in temp_resp: pass
         else:
             temp_resp.clear()
             temp_resp.append(date_time)
             print(response)
-    else:
-        pass
+    else: pass
         
 
 if __name__ == '__main__':
